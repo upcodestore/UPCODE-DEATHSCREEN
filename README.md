@@ -1,4 +1,7 @@
 * DEATH SCREEN FOR FIVEM
+
+DISCORD: https://discord.com/invite/w743faPRyk
+
   
 -You must put your alert to the ambulance in the "call" function in the "bridge.lua" file
 

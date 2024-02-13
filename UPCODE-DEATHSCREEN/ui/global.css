@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-orbitron: Orbitron;
+
+  /* font sizes */
+  --font-size-10xl-9: 29.9px;
+  --font-size-7xl-4: 26.4px;
+
+  /* Colors */
+  --color-red-100: #eb1e1e;
+  --color-deepskyblue-100: #1eadeb;
+  --color-gray-100: rgba(132, 132, 132, 0.5);
+
+  /* border radiuses */
+  --br-3xs-7: 9.7px;
+}

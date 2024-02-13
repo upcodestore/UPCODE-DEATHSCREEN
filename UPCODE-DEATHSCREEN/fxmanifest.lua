@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-name "Voice Alert"
-description "This resource provides the player with daily tasks"
+name "Death screen"
+description ""
 author "UPCODE"
 version "1.0.0"
 lua54 'yes'

@@ -24,7 +24,9 @@ else
         NetworkResurrectLocalPlayer(Configuration.RespawnCoords.x, Configuration.RespawnCoords.y, Configuration.RespawnCoords.z, Configuration.RespawnCoords[4], true, false)
         SetPlayerInvincible(ped, false)
         ClearPedBloodDamage(ped)    
-        RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+        TriggerServerEvent("hospital:server:SetDeathStatus", false)
+        TriggerServerEvent("hospital:server:SetLaststandStatus", false)
+        TriggerServerEvent('hospital:server:RespawnAtHospital')
     end)
     
 end

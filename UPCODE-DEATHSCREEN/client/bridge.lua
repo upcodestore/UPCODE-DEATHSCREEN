@@ -17,6 +17,16 @@ if Configuration.Framework == 'esx' then
 
 else
 
+     RegisterNetEvent('UPCODE:revive')
+     AddEventHandler('UPCODE:revive', function()
+        local ped = PlayerPedId()
+        SetEntityCoordsNoOffset(ped, Configuration.RespawnCoords.x, Configuration.RespawnCoords.y, Configuration.RespawnCoords.z, false, false, false)
+        NetworkResurrectLocalPlayer(Configuration.RespawnCoords.x, Configuration.RespawnCoords.y, Configuration.RespawnCoords.z, Configuration.RespawnCoords[4], true, false)
+        SetPlayerInvincible(ped, false)
+        ClearPedBloodDamage(ped)    
+        RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    end)
+    
 end
 
 
